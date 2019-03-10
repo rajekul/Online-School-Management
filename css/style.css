@@ -1,0 +1,315 @@
+*{
+	margin:0px;
+	padding: 0px;
+	outline: none;
+}
+ul,ol{
+	list-style-type:none;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration:none;
+	color: none;
+}
+img{
+	border:none;
+	margin: 0px;
+}
+.bg{
+    padding: 0px;
+    margin: 0px;
+}
+.clr{
+	clear:both;
+}
+/*navbar css start*/
+
+.navbar_bg{
+	background:#02114C;
+    z-index: 999;
+}
+.navbar-brand{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar-brand img{
+	margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top:-28px;
+    left: 67px;
+   
+}
+.navbar-right  li{
+	line-height: 45px;
+	float: left;
+	transition: all linear .03s;
+    position: relative;
+}
+.angle{
+    width: 15px;
+    height: 15px;
+    background: #E9EBEE;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 15px;
+    top: -7px;
+}
+.box{
+    position: absolute;
+    top:100px;
+    left: -155px;
+    width: 200px;
+    height: 200px;
+    background: #E9EBEE;
+    visibility: hidden;
+    transition: all linear .3s;
+    border-radius: 3px;
+}
+.form{
+    margin: 15px;
+    position: absolute;
+    
+}
+.navbar-right  li:hover .box{
+   visibility: visible;
+    top: 60px;
+}
+.navbar-right  li a{
+	text-decoration:none;
+	color:#fff;
+	padding: 0 10px;
+	border-left: 1px solid #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+}
+.navbar-right  li:first-child a{
+	border-left: none;
+}
+.affix {
+      top: 0;
+      width: 100%;
+  }
+/*banner_part start*/
+#banner_part{
+    padding: 100px 0px;
+}
+.banner
+{
+/*	background: url(../img/banner_image.jpg) no-repeat center;*/
+/*	background-size: cover;*/
+/*	padding: 250px 0px;*/
+/*    height: 500px;*/
+    border: 10px solid #E9EBEE;
+    position: relative;
+    z-index: 99;
+}
+.index{
+    z-index: 111;
+    
+}
+.banner1{
+     position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    background: #000;
+    width: 100%;
+    height: 100%;
+   opacity: .3;
+    z-index: 1;
+
+}
+.table-text tr td{
+   font-size: 12px;
+    cursor: pointer;
+}
+.icon{
+    position:fixed;
+/*    background: url(../img/dhaka_board_logo.png);*/
+    z-index: 999;
+    right: 0px;
+}
+/*banner_part end*/
+/*news and enents part start*/
+#news_part,#achievement_part,#information_part,#footer_part,#footer_part{
+    padding: 50px 0px;
+}
+#news_part h4,#achievement_part h4,#information_part h4,#footer_part h4{
+    
+    text-align: center;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800px;
+    font-size: 18px;
+    color:#fff ;
+    margin-bottom: 50px;
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    background:#3F51B5;
+    cursor: pointer;
+   
+}
+.event,.achievement {
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+     box-shadow: 5px 5px 5px #f1f1f1;
+}
+.event img,achievement img{
+    cursor: pointer;
+}
+.event h5, .achievement h5{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;}
+.event p, .achievement p{
+    text-align: left;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+.event a, .achievement a{
+    text-decoration: none;
+    color: #02114C;
+    
+}
+/*out achivement part start*/
+
+/*gallary and massage part css start*/
+.panel_hight{
+    height: 331px;
+}
+.gallary {
+    cursor: pointer;
+    transition: all linear .5s;
+}
+.gallary img{
+    position: relative;
+    cursor: pointer;
+    transition: all linear .5s;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 100px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000;
+    opacity: 0;
+    transition: all linear .5s;
+  
+}
+.hover i{
+    color: #fff;
+    top:65px;
+    position: absolute;
+    left: 100px;
+    transition: all linear .5s;
+    font-size: 30px;
+}
+.gallary :hover.hover,.hover i{
+     opacity: .5;
+     left: 0;
+    }
+.gallary :hover.hover i
+{
+    opacity: 1;
+    left: 90px;
+}
+#gallary_part h5{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    
+}
+#gallary_part p{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    
+}
+/*gallary and massage part css end*/
+/*footer_part start*/
+#footer_part{
+/*    background: #333333;*/
+}
+#footer_part h3{
+     font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color:#fff;
+    text-align: center;
+}
+#footer_part p{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+#footer_part i{
+    color:#fff;
+    background: #3F51B5;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.b2t i{
+    position: fixed;
+    font-size: 14px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #02114C;
+    color: #fff;
+    cursor:pointer;
+    transform: rotate(-90deg);
+    bottom: 10px;
+    right: 50px;
+    
+}
+a.back-to-top {
+	display: none;
+	width:30px;
+	height:30px;
+	text-indent: -9999px;
+/*	position: fixed;*/
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #CC181E url("../img/up-arrow.png") no-repeat center;
+	
+	}
+
+/*footer_part end*/
+@media (max-width:767px){
+	.navbar-brand{
+		float: none;
+		position: absolute;
+		top:0;
+	}
+/*
+	#banner_part{
+	background: url(../img/banner_image.jpg) no-repeat center;
+	background-size: cover;
+	padding: 100px 0px;
+}
+*/
+	
+}
